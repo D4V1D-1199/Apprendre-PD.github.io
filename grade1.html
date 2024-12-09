@@ -9,23 +9,22 @@
         
          <a href = "index.html"><img src ="https://cdn-icons-png.flaticon.com/512/25/25694.png"alt="home" width="30"/></a>
         
+        <div id="image-container"></div>
+    
     <script>
-        let img1=document.createElement("img1")
-        img1.src=vine-black-and-white-line-drawing-illustration-vector-removebg-preview.png
-        img1.id="1"
-        let img2=document.createElement("img2")
-        img2.src=vine-black-and-white-line-drawing-illustration-vector-removebg-preview.png
-        img2.id="2"
-        let img3=document.createElement("img3")
-        img3.src=vine-black-and-white-line-drawing-illustration-vector-removebg-preview.png
-        img3.id="3"
-        
-        <label for="radGrade">Année d'étude:</label>
-     <input type="radio" name="annee" id="radGrade" value="9e">9e
-     <input type="radio" name="annee" id="radGrade" value="10e">10e
-     <input type="radio" name="annee" id="radGrade" value="11e" checked>11e
-     <input type="radio" name="annee" id="radGrade" value="12e">12e
-            
+        const images = [
+'https://ci3.googleusercontent.com/mail-img-att/AGAZnRpQ0T6yLy0YjTJzLVvkI-6GSpuwUT1MDgx-PQTdTeapi2LFszE44Lq42-X5lljdUPlktvO6rMFZEMg6fZNo0ijmqs8nZyZeiQMPB4BWIAA59IdiDgXtxBNgCbqO_h8iJUDpuUuGCo7mUJ3bOjlMwkjLfqU-9dAW5MPBL4J2jizk2nini1od3YybvUKC4aFcYfVSFaylFpSA8wnswBj___FQ14gB8gS-AvXuMZWwluqXUWoDYDUKFxRjyQPXdyzuwbWBKfQ9s7n-I-2cuZn4jYioneXVOdqc7xXwHs_0nUp5LRj_RCiSHIvT0mqWqebZbK_Ohx_LPuzEUGDPQF8FMTTNk5OSmIQ4xaB7KbhwSVrRtHUTWKHBw7EB0SA_HUIQXMp3qDIoyPWiCpTSVkTB9O6fSOEwNzI7YbVNJQqQxwOuMaYEo64coT7x25TfQg5P2uVuKbqwIHl8TfFep6KWx3y24ho6H4fToum0OQn6R5kmouYFdoBfwcQR4XumZxUlvV5XUtkQ3PaBVyYj9YyOuE5Ura0TkW5A85sG1Z8rwiGPmp6bCKSelK1x7VjzUnTd4R-l74TaswMfF8e6ZdRhbGQ-W3henqYX5I0YtvV8Tk648RLTEFESTmFYqLxLi50zcqEXU1c3Y9QRDW3hU_3wMjwXJCLtSv-6NegfN8uozQnAmV0PWpHpCuvyoyAc-YAytJf3Pxt2yhR0VyGzcxVb3f2paPlTIJZLwEj2SyHm7h1kV4_oUvhheUgKNq9rE8ljE9OkzCUWFyWMGaABC-ItgJU-YGNe-qrdRQGxm8GSIEIQgtujtsGnfIcfT9AEsmrs-lCW0WbQzyhBmBfo2TPmssvd3TuUyuh-iFPjNsB6FPgqCgRzWskjy6OlNa7A61sWqxapEwRNwKsgW0T1U-tfHLy6KEoGS1dcxkKV8GeW4fQPVRlNiLS_Imr40UfFKaOoFuQrocliFTg2GCsCcnWmPw2r7WwuTmDUVaCI7uQLMw86BQa1kKnwn7-QHQ9L0Og4v8PdSAxx_2NSKj4PDcWeaxOmCg=s0-l75-ft',
+'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg'
+        ];
+    
+        const container = document.getElementById('image-container');
+    
+        for (let i = 0; i < images.length; i++) {
+            const img = document.createElement('img');
+            img.src = images[i];
+            container.appendChild(img);
+        }
     </script>
 
     </body>
